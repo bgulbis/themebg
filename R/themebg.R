@@ -29,7 +29,8 @@ theme_bg <- function(base_size = 11, base_family = "", xticks = TRUE, yticks = T
               axis.line = ggplot2::element_line(color = "grey85"),
               axis.text = ggplot2::element_text(color = "grey35"),
               axis.title = ggplot2::element_text(color = "grey35"),
-              axis.ticks = ggplot2::element_line(color = "grey35"))
+              axis.ticks = ggplot2::element_line(color = "grey35"),
+              plot.caption = element_text(color = "gray35"))
 
     if (!xticks) p <- p + theme(axis.ticks.x = ggplot2::element_blank())
     if (!yticks) p <- p + theme(axis.ticks.y = ggplot2::element_blank())
