@@ -8,11 +8,15 @@
 #'
 #' @param base_size base font size
 #' @param base_family base font family
+#' @param xticks logical indicating whether tick marks should be displayed on
+#'   the x-axis
+#' @param yticks logical indicating whether tick marks should be displayed on
+#'   the y-axis
 #'
 #' @export
 #'
-theme_bg <- function(base_size = 11, base_family = "") {
-    ggplot2::theme_bw(base_family = base_family, base_size = base_size) +
+theme_bg <- function(base_size = 11, base_family = "", xticks = TRUE, yticks = TRUE) {
+    p <- ggplot2::theme_bw(base_family = base_family, base_size = base_size) +
         ggplot2::theme(legend.background = ggplot2::element_blank(),
               legend.key = ggplot2::element_blank(),
               legend.text = ggplot2::element_text(color = "grey35"),
@@ -26,5 +30,9 @@ theme_bg <- function(base_size = 11, base_family = "") {
               axis.text = ggplot2::element_text(color = "grey35"),
               axis.title = ggplot2::element_text(color = "grey35"),
               axis.ticks = ggplot2::element_line(color = "grey35"))
+
+    if (!xticks) p <- p + theme(axis.ticks.x = ggplot2::element_blank())
+    if (!yticks) p <- p + theme(axis.ticks.y = ggplot2::element_blank())
+    p
 }
 

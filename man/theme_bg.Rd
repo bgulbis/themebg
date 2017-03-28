@@ -4,12 +4,18 @@
 \alias{theme_bg}
 \title{Custom ggplot2 theme}
 \usage{
-theme_bg(base_size = 11, base_family = "")
+theme_bg(base_size = 11, base_family = "", xticks = TRUE, yticks = TRUE)
 }
 \arguments{
 \item{base_size}{base font size}
 
 \item{base_family}{base font family}
+
+\item{xticks}{logical indicating whether tick marks should be displayed on
+the x-axis}
+
+\item{yticks}{logical indicating whether tick marks should be displayed on
+the y-axis}
 }
 \description{
 This is a custom ggplot2 theme loosely based on recommendations of Edward
