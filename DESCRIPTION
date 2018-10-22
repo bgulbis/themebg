@@ -1,7 +1,7 @@
 Package: themebg
 Type: Package
 Title: Customized theme for ggplot2
-Version: 0.1.0
+Version: 0.2.0
 Depends:
     R (>= 2.10)
 Authors@R: person("Brian", "Gulbis", email="brian.gulbis@gmail.com", role=c("aut","cre"))
@@ -10,4 +10,4 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: ggplot2
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
