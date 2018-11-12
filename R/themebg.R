@@ -34,8 +34,9 @@ theme_bg <- function(base_size = 11, base_family = "", xticks = TRUE, yticks = T
             axis.line = ggplot2::element_line(color = "grey85"),
             axis.text = ggplot2::element_text(color = "grey35"),
             axis.title = ggplot2::element_text(color = "grey35"),
-            axis.ticks = ggplot2::element_line(color = "grey35"),
-            plot.caption = element_text(color = "gray35")
+            axis.ticks = ggplot2::element_line(color = "grey50"),
+            plot.caption = ggplot2::element_text(color = "gray35"),
+            plot.title = ggplot2::element_text(color = "gray35")
         )
 
     if (!xticks) p <- p + theme(axis.ticks.x = ggplot2::element_blank())
@@ -79,7 +80,7 @@ theme_bg_print <- function(base_size = 11, base_family = "", xticks = TRUE, ytic
             axis.text = ggplot2::element_text(color = "black"),
             axis.title = ggplot2::element_text(color = "black"),
             axis.ticks = ggplot2::element_line(color = "black"),
-            plot.caption = element_text(color = "black")
+            plot.caption = ggplot2::element_text(color = "black")
         )
 
     if (!xticks) p <- p + theme(axis.ticks.x = ggplot2::element_blank())
