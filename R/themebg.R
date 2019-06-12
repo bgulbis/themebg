@@ -161,7 +161,11 @@ theme_bg_ppt <- function(base_size = 11, base_family = "", xticks = TRUE,
         ggplot2::theme(
             legend.background = ggplot2::element_blank(),
             legend.key = ggplot2::element_blank(),
-            legend.text = ggplot2::element_text(color = "grey35"),
+            legend.text = ggplot2::element_text(
+                family = family,
+                size = 12,
+                color = "grey35"
+            ),
             legend.title = ggplot2::element_text(color = "grey35"),
             panel.background = ggplot2::element_blank(),
             panel.border = ggplot2::element_blank(),
