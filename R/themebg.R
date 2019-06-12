@@ -148,12 +148,12 @@ theme_bg_invert <- function(base_size = 11, base_family = "", xticks = TRUE, yti
 #'   the x-axis
 #' @param yticks logical indicating whether tick marks should be displayed on
 #'   the y-axis
-#' @param family string with a font family name, defaults to Calibri
+#' @param family string with a font family name
 #'
 #' @export
 #'
 theme_bg_ppt <- function(base_size = 11, base_family = "", xticks = TRUE,
-                         yticks = TRUE, family = "Calibri") {
+                         yticks = TRUE, family = NULL) {
     p <- ggplot2::theme_bw(
         base_family = base_family,
         base_size = base_size

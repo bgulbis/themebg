@@ -5,7 +5,7 @@
 \title{Custom ggplot2 theme for PowerPoint}
 \usage{
 theme_bg_ppt(base_size = 11, base_family = "", xticks = TRUE,
-  yticks = TRUE, family = "Calibri")
+  yticks = TRUE, family = NULL)
 }
 \arguments{
 \item{base_size}{base font size}
@@ -18,7 +18,7 @@ the x-axis}
 \item{yticks}{logical indicating whether tick marks should be displayed on
 the y-axis}
 
-\item{family}{string with a font family name, defaults to Calibri}
+\item{family}{string with a font family name}
 }
 \description{
 This is a custom ggplot2 theme loosely based on recommendations of Edward
