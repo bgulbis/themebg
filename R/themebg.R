@@ -164,13 +164,13 @@ theme_bg_ppt <- function(base_size = 11, base_family = "", xticks = TRUE,
             legend.text = ggplot2::element_text(
                 family = family,
                 size = 12,
-                color = "grey35"
+                color = "grey50"
             ),
-            legend.title = ggplot2::element_text(color = "grey35"),
+            legend.title = ggplot2::element_text(color = "grey50"),
             panel.background = ggplot2::element_blank(),
             panel.border = ggplot2::element_blank(),
             strip.background = ggplot2::element_blank(),
-            strip.text = ggplot2::element_text(color = "grey35"),
+            strip.text = ggplot2::element_text(color = "grey50"),
             plot.background = ggplot2::element_blank(),
             panel.grid = ggplot2::element_blank(),
             axis.line = ggplot2::element_line(color = "grey85"),
@@ -178,13 +178,13 @@ theme_bg_ppt <- function(base_size = 11, base_family = "", xticks = TRUE,
             axis.text = ggplot2::element_text(
                 family = family,
                 size = 14,
-                color = "grey35"
+                color = "grey50"
             ),
             axis.title.x = element_text(vjust = 0.1),
             axis.title = ggplot2::element_text(
                 family = family,
                 size = 16,
-                color = "grey35"
+                color = "grey50"
             ),
             axis.ticks = ggplot2::element_line(color = "grey50"),
             plot.caption = ggplot2::element_text(
