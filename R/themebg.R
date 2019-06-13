@@ -187,7 +187,11 @@ theme_bg_ppt <- function(base_size = 11, base_family = "", xticks = TRUE,
                 color = "grey35"
             ),
             axis.ticks = ggplot2::element_line(color = "grey50"),
-            plot.caption = ggplot2::element_text(color = "gray35"),
+            plot.caption = ggplot2::element_text(
+                family = family,
+                size = 14,
+                color = "gray50"
+            ),
             plot.title = ggplot2::element_text(
                 family = family,
                 size = 22,
@@ -198,11 +202,6 @@ theme_bg_ppt <- function(base_size = 11, base_family = "", xticks = TRUE,
                 family = family,
                 size = 18,
                 hjust = 0.5,
-                color = "gray50"
-            ),
-            plot.caption = ggplot2::element_text(
-                family = family,
-                size = 14,
                 color = "gray50"
             )
         )
