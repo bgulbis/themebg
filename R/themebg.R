@@ -193,6 +193,18 @@ theme_bg_ppt <- function(base_size = 11, base_family = "", xticks = TRUE,
                 size = 22,
                 hjust = 0.5,
                 color = "gray35"
+            ),
+            plot.subtitle = ggplot2::element_text(
+                family = family,
+                size = 18,
+                hjust = 0.5,
+                color = "gray50"
+            ),
+            plot.caption = ggplot2::element_text(
+                family = family,
+                size = 14,
+                hjust = 0.5,
+                color = "gray50"
             )
         )
 
